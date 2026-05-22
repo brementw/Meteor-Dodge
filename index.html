@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>火箭閃隕石</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <section class="game-stage" aria-label="火箭閃隕石遊戲區">
+      <canvas id="gameCanvas" width="540" height="800"></canvas>
+
+      <div class="hud hud-score">
+        <span>分數</span>
+        <strong id="scoreText">0</strong>
+      </div>
+
+      <div class="hud hud-level">
+        <span>第</span>
+        <strong id="levelText">1</strong>
+        <span>關</span>
+      </div>
+
+      <div class="lane-guide" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="messagePanel" class="message-panel is-visible">
+        <h1>火箭閃隕石</h1>
+        <p id="messageText">滑鼠左鍵往左一格，右鍵往右一格。吃道具加分，閃開隕石與 UFO。</p>
+        <button id="startButton" type="button">開始遊戲</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
